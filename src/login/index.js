@@ -65,6 +65,9 @@ function Login() {
   const handleSigin = async () => {
     navigate("/login-with-faceid");
   };
+  const handleSigup = async () => {
+    navigate("/signup");
+  };
 
   return (
     <div className="h-lvh w-lvw flex flex-col items-center justify-center">
@@ -108,6 +111,13 @@ function Login() {
           onClick={handleSigin}
         >
           Login with FaceID
+        </button>
+        <button
+          type="button"
+          className="bg-green-700 text-white rounded p-1"
+          onClick={handleSigup}
+        >
+          signup with FaceID
         </button>
       </form>
     </div>
